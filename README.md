@@ -107,9 +107,9 @@
 
 
 ## **Ⅵ. :camera: Ảnh Chụp Màn Hình**
-* [**Demo Trực Tiếp**](https://wapvn.top/)
+* [**Demo Trực Tiếp**](https://up.bayphong.top/)
 * **Ảnh chụp màn hình**
-![Typecho Việt Hoá](https://wapvn.top/usr/themes/joe-plus/screenshot.png)
+![Typecho VN](https://cdn.jsdelivr.net/gh/meotom1198/TypechoVN@bc81338505fa5f7e3892ecc2a3ff0b531d94aa03/demo.png)
 
 ---
 
