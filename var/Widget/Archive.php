@@ -282,7 +282,7 @@ class Archive extends Contents
             }
 
             /** Khởi tạo trình tổng hợp */
-            $this->setFeed(new Feed(Common::VERSION, $this->feedType, $this->options->charset, _t('zh-CN')));
+            $this->setFeed(new Feed(Common::VERSION, $this->feedType, $this->options->charset, _t('vi-VN')));
 
             /** 10 bài viết được xuất theo mặc định **/
             $parameter->pageSize = 10;
