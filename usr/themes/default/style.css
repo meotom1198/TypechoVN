@@ -1,9 +1,9 @@
 /* ------------------------------------
  * Typecho Default Theme
  *
- * @author  Typecho Team
- * @link  http: //typecho.org/
- * @update  2013-10-28
+ * @author  Typecho VN
+ * @link  http: //wapvn.top/
+ * @update  2025-04-12
  * --------------------------------- */
 
 /* ------------------
@@ -12,8 +12,6 @@
 body {
   background-color: #FFF;
   color: #444;
-  /*font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;*/
-  font-family: "Droid Serif", Georgia, "Times New Roman", "PingFang SC", "Hiragino Sans GB", "Source Han Sans CN", "WenQuanYi Micro Hei","Microsoft Yahei", serif;
   font-size: 87.5%;
 }
 
@@ -26,7 +24,6 @@ a:hover, a:active {
 }
 pre, code { 
   background: #F3F3F3;
-  font-family: Menlo, Monaco, Consolas, "Lucida Console", "Courier New", monospace;
   font-size: .92857em;
 }
 code { padding: 2px 4px; color: #B94A48; }
@@ -58,10 +55,6 @@ table td {
 }
 table th {
   background: #f3f3f3;
-}
-
-h1, h2, h3, h4, h5, h6 {
-  font-family: "Helvetica Neue", Helvetica, Arial, "PingFang SC", "Hiragino Sans GB", "WenQuanYi Micro Hei","Microsoft Yahei", sans-serif;
 }
 
 input[type="text"],
