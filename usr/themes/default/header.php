@@ -19,7 +19,7 @@
     <script src="https://cdn.jsdelivr.net/gh/wordpress-premium/font-awesome-pro@7ab451a50c28f3a7b9f3fa425ef7570f3bf345bc/js/all.min.js"></script>
     <link rel="stylesheet" href="<?php $this->options->themeUrl('normalize.css'); ?>">
     <link rel="stylesheet" href="<?php $this->options->themeUrl('grid.css'); ?>">
-    <link rel="stylesheet" href="<?php $this->options->themeUrl('typechovn.css'); ?>">
+    <link rel="stylesheet" href="<?php $this->options->themeUrl('style.css'); ?>">
     <link rel="shortcut icon" href="/images/favicon.ico" />
     <?php $this->header(); ?>
     <style>
