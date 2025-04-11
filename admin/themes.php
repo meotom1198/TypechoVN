@@ -63,14 +63,14 @@ include 'menu.php';
                                     <?php if ($options->theme != $themes->name || $options->missingTheme): ?>
                                         <p>
                                             <?php if (\Widget\Themes\Files::isWriteable()): ?>
-                                                <b>[</b><a href="<?php $options->adminUrl('theme-editor.php?theme=' . $themes->name); ?>"><b style="color:blue;"><?php _e('Chỉnh sửa'); ?></b></a><b>]</b> &nbsp;
+                                                <b>[</b><a href="<?php $options->adminUrl('theme-editor.php?theme=' . $themes->name); ?>"><b><?php _e('Chỉnh sửa'); ?></b></a><b>]</b> &nbsp;
                                             <?php endif; ?>
-                                                <b>[</b><a href="<?php $security->index('/action/themes-edit?change=' . $themes->name); ?>"><b style="color:violet;"><?php _e('Kích hoạt'); ?></b></a><b>]</b> &nbsp;
+                                                <b>[</b><a href="<?php $security->index('/action/themes-edit?change=' . $themes->name); ?>"><b><?php _e('Kích hoạt'); ?></b></a><b>]</b> &nbsp;
                                         </p>
                                     <?php else: ?>
                                         <p>
-                                                <b>[</b><a href="<?php $options->adminUrl('theme-editor.php?theme=' . $themes->name); ?>"><b style="color:blue;"><?php _e('Chỉnh sửa'); ?></b></a><b>]</b> &nbsp;
-                                                <b>[</b><a href="<?php $options->adminUrl('/options-theme.php'); ?>"><b style="color:violet;"><?php _e('Cài đặt'); ?></b></a><b>]</b> &nbsp;
+                                                <b>[</b><a href="<?php $options->adminUrl('theme-editor.php?theme=' . $themes->name); ?>"><b><?php _e('Chỉnh sửa'); ?></b></a><b>]</b> &nbsp;
+                                                <b>[</b><a href="<?php $options->adminUrl('/options-theme.php'); ?>"><b><?php _e('Cài đặt'); ?></b></a><b>]</b> &nbsp;
                                         </p>
                                     <?php endif; ?>
                                 </td>
