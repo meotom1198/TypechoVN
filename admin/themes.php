@@ -65,7 +65,7 @@ include 'menu.php';
                                             <?php if (\Widget\Themes\Files::isWriteable()): ?>
                                                 <b>[</b><a href="<?php $options->adminUrl('theme-editor.php?theme=' . $themes->name); ?>"><b style="color:blue;"><?php _e('Chỉnh sửa'); ?></b></a><b>]</b> &nbsp;
                                             <?php endif; ?>
-                                                <b>[</b><a href="/admin/themes.php"><b style="color:violet;"><?php _e('Kích hoạt'); ?></b></a><b>]</b> &nbsp;
+                                                <b>[</b><a href="<?php $security->index('/action/themes-edit?change=' . $themes->name); ?>"><b style="color:violet;"><?php _e('Kích hoạt'); ?></b></a><b>]</b> &nbsp;
                                         </p>
                                     <?php else: ?>
                                         <p>
