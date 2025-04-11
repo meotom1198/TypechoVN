@@ -36,10 +36,10 @@ include 'menu.php';
                         <?php if ($options->missingTheme): ?>
                             <tr id="theme-<?php $options->missingTheme; ?>" class="current">
                                 <td colspan="2" class="warning">
-                                    <p><strong><?php _e('Thư mục "%s" của giao diện trước đó không tồn tại hoặc đã bị đổi tên hoặc không tồn tại. Bạn có thể tải lên lại giao diện đó hoặc kích hoạt theme khác.', $options->missingTheme); ?></strong></p>
+                                    <p><strong><?php _e('Thư mục "%s" của theme trước đó không tồn tại hoặc đã bị đổi tên hoặc không tồn tại. Bạn có thể tải lên lại theme đó hoặc kích hoạt theme khác.', $options->missingTheme); ?></strong></p>
                                     <ul>
-                                        <li><?php _e('Làm mới trang, sau khi tải lên lại giao diện trước đó thì thông báo này sẽ biến mất.'); ?></li>
-                                        <li><?php _e('Khi kích hoạt theme mới, dữ liệu cài đặt cho giao diện hiện tại sẽ bị xóa bỏ.'); ?></li>
+                                        <li><?php _e('Làm mới trang, sau khi tải lên lại theme trước đó thì thông báo này sẽ biến mất.'); ?></li>
+                                        <li><?php _e('Khi kích hoạt theme mới, dữ liệu cài đặt cho theme hiện tại sẽ bị xóa bỏ.'); ?></li>
                                     </ul>
                                 </td>
                             </tr>
@@ -51,16 +51,18 @@ include 'menu.php';
                                 <td valign="top"><img src="<?php $themes->screen(); ?>"
                                                       alt="<?php $themes->name(); ?>"/></td>
                                 <td valign="top">
-                                    <h3>Tên: <?php '' != $themes->title ? $themes->title() : $themes->name(); ?></h3>
+                                    <b style="font-size: 22px;">I. <?php '' != $themes->title ? $themes->title() : $themes->name(); ?></b>
                                     <p>
-                                        <?php if ($themes->author): ?><b><?php _e('Tác giả'); ?>:</b> <?php if ($themes->homepage): ?><a href="<?php $themes->homepage() ?>"><?php endif; ?><?php $themes->author(); ?><?php if ($themes->homepage): ?></a><?php endif; ?><?php endif; ?>
+                                        <?php if ($themes->author): ?><b><?php _e('1. Tác giả:'); ?></b> <?php if ($themes->homepage): ?><a href="<?php $themes->homepage() ?>"><?php endif; ?><?php $themes->author(); ?><?php if ($themes->homepage): ?></a><?php endif; ?><?php endif; ?>
                                     </p>
                                     <p>
-                                        <?php if ($themes->version): ?><b><?php _e('Phiên bản'); ?>:</b> <?php $themes->version() ?><?php endif; ?>
+                                        <?php if ($themes->version): ?><b><?php _e('2. Phiên bản:'); ?></b> <?php $themes->version() ?><?php endif; ?>
                                     </p>
-                                    <p><b>Mô tả</b>
-                                        <?php echo nl2br($themes->description); ?></p>
-                                    <?php if ($options->theme != $themes->name || $options->missingTheme): ?>
+                                    <p>
+                                        <b style="font-size: 18px;">II. Giới thiệu</b><br>
+                                        <?php echo nl2br($themes->description); ?>
+                                    </p>
+                                        <?php if ($options->theme != $themes->name || $options->missingTheme): ?>
                                         <p>
                                             <?php if (\Widget\Themes\Files::isWriteable()): ?>
                                                 <b>[</b><a href="<?php $options->adminUrl('theme-editor.php?theme=' . $themes->name); ?>"><b><?php _e('Chỉnh sửa'); ?></b></a><b>]</b> &nbsp;
